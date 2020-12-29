@@ -1,4 +1,8 @@
 input{
+  background: rgba(224, 224, 224, 0.2);
+  border: 1px solid #651FA7;
   border-radius: 20px;
+  height: 30px;
+  /* max-width: 200px; */
+  width: 300px;
 }
-
