@@ -1,0 +1,38 @@
+.common{
+  background: rgba(224, 224, 224, 0.2);
+  height: 100vh;
+  margin: 5px;
+
+}
+.aside{
+  /* border: 2px solid black; */
+  text-align: left;
+  min-width: 180px;
+}
+.main{
+  /* border: 2px solid red; */
+  text-align: center;
+}
+/* .list-header{
+  border: 1px solid black;
+  margin: auto;
+}
+.list-group-item{
+  background: none;
+  border: none;
+  color: #828282;
+} */
+th{
+  border: none;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+td:hover{
+  background: #E5E5E5;
+  color: #651FA7;
+}
+a:hover{
+  color: #651FA7;
+}

@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 aside common">
+
+      <!-- <h5 class="list-header">Admin</h5>
+      <ul class="list-group">
+        <li class="list-group-item"><a href="#"><i class="fas fa-users"></i> User Admin</a></li>
+        <li class="list-group-item"><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+        <li class="list-group-item"><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul> -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Admin</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><i class="fas fa-users"></i><a [routerLink]="['/user-admin']"> User Admin</a></td>
+            <!-- <td><i class="fas fa-users"></i> <span [routerLink]="['/user-admin']"> User Admin</span></td> -->
+          </tr>
+          <tr>
+            <td><i class="fas fa-cog"></i><a [routerLink]="['/settings']"> Settings</a></td>
+            <!-- <td><i class="fas fa-cog"></i> <span [routerLink]="['/settings']"> Settings</span></td> -->
+          </tr>
+          <tr>
+            <td><i class="fas fa-sign-out-alt"></i><a [routerLink]="['/logout']"> Logout</a></td>
+            <!-- <td><i class="fas fa-sign-out-alt"></i> <span [routerLink]="['/logout']"> </span></td> -->
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- <div [routerLink]="['/settings']">Settings</div> -->
+
+
+    </div>
+    <div class="col-md-8 main common">
+
+      <div class="container">
+
+        <router-outlet></router-outlet>
+
+      </div>
+
+
+
+
+
+
+    </div>
+  </div>
+</div>

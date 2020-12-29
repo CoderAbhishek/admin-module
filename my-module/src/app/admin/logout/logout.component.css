@@ -1,0 +1,8 @@
+.box{
+  background: white;
+  width: 400px;
+  height: 300px;
+  position: fixed;
+  top: 10rem;
+  /* left: 50%; */
+}

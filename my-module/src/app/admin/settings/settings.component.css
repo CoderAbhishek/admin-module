@@ -1,0 +1,37 @@
+.search{
+  width: auto;
+  /* min-width: 200px; */
+  max-width: 400px;
+  margin: auto;
+  margin-top: 1em;
+}
+input{
+  border-radius: 20px;
+  height: 30px;
+
+
+  /* animation: infinite colorchange 5s;
+  width: 300px;
+  height: 300px; */
+}
+
+/* @keyframes colorchange {
+  0%{
+    background: red;
+    border-radius: 0;
+  }
+  25%{
+    background: yellow;
+  }
+  50%{
+    background: blue;
+    border-radius: 300px;
+  }
+  75%{
+    background: green;
+  }
+  100%{
+    background: red;
+    border-radius: 0;
+  }
+} */
