@@ -1,13 +1,75 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-3 aside common">
+      <div class="content">
+    <div class="aside common">
 
-      <!-- <h5 class="list-header">Admin</h5>
-      <ul class="list-group">
-        <li class="list-group-item"><a href="#"><i class="fas fa-users"></i> User Admin</a></li>
-        <li class="list-group-item"><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
-        <li class="list-group-item"><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-      </ul> -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Dashboard</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><i class="fas fa-home"></i><a> Home</a></td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-envelope"></i><a> Messages</a></td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-file-chart-line"></i><a> Reports</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Project</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><i class="fas fa-file-chart-pie"></i><a> Project View</a></td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-tasks"></i><a> Task View</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Learning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><i class="fas fa-atom"></i><a> System</a></td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-file-search"></i><a> Project</a></td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-lightbulb-on"></i><a> My Learnings</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Profiles</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><i class="far fa-list-alt"></i><a> List Profiles</a></td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-repeat-alt"></i><a> Update Profiles</a></td>
+          </tr>
+        </tbody>
+      </table>
       <table class="table">
         <thead>
           <tr>
@@ -17,36 +79,19 @@
         <tbody>
           <tr>
             <td><i class="fas fa-users"></i><a [routerLink]="['/user-admin']"> User Admin</a></td>
-            <!-- <td><i class="fas fa-users"></i> <span [routerLink]="['/user-admin']"> User Admin</span></td> -->
           </tr>
           <tr>
             <td><i class="fas fa-cog"></i><a [routerLink]="['/settings']"> Settings</a></td>
-            <!-- <td><i class="fas fa-cog"></i> <span [routerLink]="['/settings']"> Settings</span></td> -->
           </tr>
           <tr>
             <td><i class="fas fa-sign-out-alt"></i><a [routerLink]="['/logout']"> Logout</a></td>
-            <!-- <td><i class="fas fa-sign-out-alt"></i> <span [routerLink]="['/logout']"> </span></td> -->
           </tr>
         </tbody>
       </table>
-
-      <!-- <div [routerLink]="['/settings']">Settings</div> -->
-
-
     </div>
-    <div class="col-md-8 main common">
 
+    <div class="main common">
       <div class="container">
-
         <router-outlet></router-outlet>
-
       </div>
-
-
-
-
-
-
     </div>
-  </div>
-</div>

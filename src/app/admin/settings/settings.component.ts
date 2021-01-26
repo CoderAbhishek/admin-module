@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Notification } from 'src/app/notification';
+import { NotificationService } from 'src/app/notification.service';
 
 @Component({
   selector: 'app-settings',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingsComponent implements OnInit {
 
-  constructor() { }
+  notifications: Notification[];
+  constructor(private notificationService: NotificationService) { }
 
   ngOnInit(): void {
+    this.notificationService.getNotifications().subscribe((data: Notification[]) => {
+      this.notifications = data;
+    });
   }
 
 }

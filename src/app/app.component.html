@@ -1,24 +1,41 @@
 <div class="container">
   <nav class="navbar navbar-light">
     <div class="row">
-    <a class="col" [routerLink]="['/']" class="navbar-brand">
+    <a [routerLink]="['/']" class="navbar-brand">
       <i class="fas fa-paper-plane"></i>
       Portal Name</a>
 
-      <!-- <span> -->
-        <!-- <i class="fas fa-search"></i> -->
-        <div class="form-group col">
-          <input class="form-control" type="search" placeholder="Search">
-        </div>
-      <!-- </span> -->
+      <input id="global-search" class="form-control" type="search" placeholder="Search">
 
+      <div class="dropdown show">
+        <a id="dropdownMenuLink" class="bell-icon dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-bell fa-2x"></i></a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <ul *ngFor = "let notification of notifications">
+            <li><a class="dropdown-item" href="#"><p class="notify-message">{{ notification.message }}</p><span class="notify-time">{{ notification.createdAt }}</span></a></li>
+          </ul>
+          <!-- <ul>
+            <li>
+              <a class="dropdown-item" href="#" ><p>Message1</p><span class="notify-time">3:50pm</span></a>
+              <a class="dropdown-item" href="#"><p>Message2</p><span class="notify-time">3:50pm</span></a>
+              <a class="dropdown-item" href="#"><p>Message3</p><span class="notify-time">3:50pm</span></a>
+              <a class="dropdown-item" href="#"><p>Message4</p><span class="notify-time">3:50pm</span></a>
+              <a class="dropdown-item" href="#"><p>Message5</p><span class="notify-time">3:50pm</span></a>
+              <a class="dropdown-item" href="#"><p>Message6</p><span class="notify-time">3:50pm</span></a>
+              <a class="dropdown-item" href="#"><p>Message7</p><span class="notify-time">3:50pm</span></a>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+      <i class="fas fa-user-circle fa-3x"></i>
+
+      <div class="profile">
+        <h4>John Doe</h4>
+        <p>Admin <i class="fas fa-caret-down"></i></p>
+      </div>
     </div>
   </nav>
 
-
-
-
-  <app-admin></app-admin>
+   <app-admin></app-admin>
 
 </div>
 

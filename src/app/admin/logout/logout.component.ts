@@ -12,4 +12,5 @@ export class LogoutComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
 }

@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Notification } from './notification';
+import { NotificationService } from './notification.service';
+// import {  } from 'bootstrap/js/dist/'
 // import {  } from '@fortawesome/fontawesome-svg-core';
 
 @Component({
@@ -6,7 +9,14 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'my-module';
-  // faCoffee = faCoffee;
+  notifications: Notification[];
+  constructor(private notificationService: NotificationService) { }
+
+  ngOnInit(): void {
+    this.notificationService.getNotifications().subscribe((data: Notification[]) => {
+      this.notifications = data;
+    });
+  }
 }

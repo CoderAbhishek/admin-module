@@ -1,6 +1,51 @@
-  <!-- <div class="topic">
-    <p>Settings <i class="fas fa-cog"></i></p>
-  </div> -->
+    <!-- <div class="page"> -->
     <div class="form-group search">
       <input class="form-control" type="search" placeholder="Search">
     </div>
+
+    <div class="card">
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <th>Notification ID</th>
+            <th>Message</th>
+            <th>Created At</th>
+            <th>Read/Unread</th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let notification of notifications">
+              <td>{{ notification.notificationId }}</td>
+              <td>{{ notification.message }}</td>
+              <td>{{ notification.createdAt }}</td>
+              <td>{{ notification.read }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+
+  <div class="card">
+    <!-- <img src="..." class="card-img-top" alt="..."> -->
+    <div class="card-body">
+      <h5 class="card-title">User Settings</h5>
+      <p class="card-text">Manage your users info</p>
+      <a href="#" class="btn btn-primary">Light/Dark Mode</a>
+    </div>
+  </div>
+  <div class="card">
+    <!-- <img src="..." class="card-img-top" alt="..."> -->
+    <div class="card-body">
+      <h5 class="card-title">Privacy Policy</h5>
+      <p class="card-text">Manage your privacy settings</p>
+      <a href="#" class="btn btn-primary">Go to settings</a>
+    </div>
+  </div>
+<!-- </div> -->

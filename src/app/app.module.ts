@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppComponent } from './app.component';
@@ -20,7 +20,7 @@ import { LogoutComponent } from './admin/logout/logout.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // FontAwesomeModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
